@@ -1,6 +1,6 @@
 # 🚀 Advanced Todo App  
 
-![Todo App](https://your-image-url.com)  
+![Todo App](./public/assets/homePage.png)  
 
 ## 📌 Overview  
 The **Advanced Todo App** is a modern, feature-rich task management application built using **React** and **Material-UI**. It allows users to add, update, delete, and organize tasks efficiently.  
@@ -17,7 +17,7 @@ The **Advanced Todo App** is a modern, feature-rich task management application 
 - **Backend (Optional):** Node.js, Express, MongoDB  
 
 ## 📸 Screenshots  
-| Task Input | 
+| Output| 
 |------------|
 | ![Login Page](./public/assets/login.png) |
 
