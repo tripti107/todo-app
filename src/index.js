@@ -17,7 +17,7 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router basename="/advanced-todo-app">
+        <Router>
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
