@@ -9,6 +9,11 @@ export const addTask = (task) => (dispatch) => {
   }
 };
 
+export const toggleCompleted = (taskId) => ({
+  type: 'TOGGLE_COMPLETED',
+  payload: taskId
+})
+
 export const deleteTask = (taskId) => ({
   type: 'DELETE_TASK',
   payload: taskId

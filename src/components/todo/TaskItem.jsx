@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteTask, fetchWeather } from '../../redux/actions/todoActions';
-import { Card, CardContent, Typography, IconButton, Grid, Chip } from '@mui/material';
+import { deleteTask, fetchWeather, toggleCompleted } from '../../redux/actions/todoActions';
+import { Card, CardContent, Typography, IconButton, Grid, Chip, Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
@@ -13,7 +13,10 @@ const TaskItem = ({ task }) => {
       dispatch(fetchWeather(task.id, task.location));
     }
   }, [dispatch, task.id, task.isOutdoor, task.location]);
-
+  // const handleCompleted = () => {
+  //   console.log("clicked");
+  //   dispatch(toggleCompleted(task.id))
+  // }
   return (
     <Card sx={{ mb: 2 }}>
       <CardContent>
@@ -45,6 +48,9 @@ const TaskItem = ({ task }) => {
             <IconButton onClick={() => dispatch(deleteTask(task.id))}>
               <DeleteIcon color="error" />
             </IconButton>
+            <Button variant="contained" size="small" color={task.completed?"success":"warning"} onClick={()=>{dispatch(toggleCompleted(task.id))}}>
+              {task.completed?"Completed":"Pending"}
+            </Button>
           </Grid>
         </Grid>
       </CardContent>

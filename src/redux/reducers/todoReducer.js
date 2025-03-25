@@ -14,6 +14,13 @@ const initialState = {
           loading: false,
           tasks: [...state.tasks, action.payload]
         };
+      case 'TOGGLE_COMPLETED':
+        return {
+          ...state,
+          tasks: state.tasks.map(task =>
+            task.id === action.payload ? { ...task, completed: !task.completed } : task
+          )
+        }
       case 'ADD_TASK_FAILURE':
         return { ...state, loading: false, error: action.payload };
       case 'DELETE_TASK':

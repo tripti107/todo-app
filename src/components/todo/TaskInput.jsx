@@ -20,7 +20,8 @@ const TaskInput = () => {
       priority,
       isOutdoor,
       location,
-      weather: null
+      weather: null,
+      completed: false
     };
     
     dispatch(addTask(newTask));
