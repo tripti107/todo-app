@@ -17,11 +17,11 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Router>
+        <Router basename="/advanced-todo-app">
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
-            <Route path="/advanced-todo-app" element={<ProtectedRoute><App /></ProtectedRoute>} />
+            <Route path="/" element={<ProtectedRoute><App /></ProtectedRoute>} />
           </Routes>
         </Router>
       </ThemeProvider>
