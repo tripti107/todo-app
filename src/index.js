@@ -21,7 +21,7 @@ root.render(
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
-            <Route path="/" element={<ProtectedRoute><App /></ProtectedRoute>} />
+            <Route path="/advanced-todo-app" element={<ProtectedRoute><App /></ProtectedRoute>} />
           </Routes>
         </Router>
       </ThemeProvider>
