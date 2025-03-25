@@ -32,7 +32,7 @@ npm start
 ```
 
 ## Login Credentials
-username: user
-password: password
+- **Username:** user  
+- **Password:** password  
 
 **_Fill **user** in username and **password** in password field_**
