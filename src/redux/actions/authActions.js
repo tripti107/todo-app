@@ -1,7 +1,7 @@
 export const loginUser = (credentials, onSuccess) => async (dispatch) => {
     try {
       // Mock authentication
-      if (credentials.username === 'user' && credentials.password === 'password') {
+      if (credentials.username === 'admin' && credentials.password === 'admin') {
         dispatch({
           type: 'LOGIN_SUCCESS',
           payload: { username: credentials.username }
