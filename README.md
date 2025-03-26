@@ -6,7 +6,8 @@
 The **Advanced Todo App** is a modern, feature-rich task management application built using **React** and **Material-UI**. It allows users to add, update, delete, and organize tasks efficiently.  
 
 ## 🌟 Features  
-✅ Add, Edit, and Delete Tasks  
+✅ Add, Edit, and Delete Tasks 
+✅ Mark as completed or pending 
 ✅ Beautiful UI with Material-UI  
 ✅ Responsive Design  
 ✅ Local Storage Support  
