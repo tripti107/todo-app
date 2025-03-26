@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Typography variant="h3" gutterBottom align="center">
-        Advanced Todo App
+        Todo App
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12}>
